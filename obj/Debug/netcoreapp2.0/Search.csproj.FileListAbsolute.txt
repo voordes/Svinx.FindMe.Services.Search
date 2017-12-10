@@ -1,0 +1,11 @@
+C:\Development\Svinx\FindMe\Services\Search\bin\Debug\netcoreapp2.0\Search.deps.json
+C:\Development\Svinx\FindMe\Services\Search\bin\Debug\netcoreapp2.0\Search.runtimeconfig.json
+C:\Development\Svinx\FindMe\Services\Search\bin\Debug\netcoreapp2.0\Search.runtimeconfig.dev.json
+C:\Development\Svinx\FindMe\Services\Search\bin\Debug\netcoreapp2.0\Search.dll
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.csprojResolveAssemblyReference.cache
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.csproj.CoreCompileInputs.cache
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.AssemblyInfoInputs.cache
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.AssemblyInfo.cs
+C:\Development\Svinx\FindMe\Services\Search\bin\Debug\netcoreapp2.0\Search.pdb
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.dll
+C:\Development\Svinx\FindMe\Services\Search\obj\Debug\netcoreapp2.0\Search.pdb
