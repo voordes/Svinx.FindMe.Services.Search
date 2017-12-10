@@ -3115,11 +3115,11 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
-      "Svinx.FindMe.Libraries.Search/1.0.0": {
+      "Svinx.FindMe.Libraries.Search/1.0.5": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
-          "Svinx.Libraries.RabbitMQ": "1.0.0"
+          "Svinx.Libraries.Queues": "1.0.2"
         },
         "compile": {
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
@@ -3128,17 +3128,18 @@
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
         }
       },
-      "Svinx.Libraries.RabbitMQ/1.0.0": {
+      "Svinx.Libraries.Queues/1.0.2": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Extensions.Options": "2.0.0",
           "Newtonsoft.Json": "10.0.3",
           "RabbitMQ.Client": "5.0.1"
         },
         "compile": {
-          "lib/netcoreapp2.0/Svinx.Libraries.RabbitMQ.dll": {}
+          "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/Svinx.Libraries.RabbitMQ.dll": {}
+          "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -8024,24 +8025,24 @@
         "stackexchange.redis.strongname.nuspec"
       ]
     },
-    "Svinx.FindMe.Libraries.Search/1.0.0": {
-      "sha512": "GUNVkJ29e0CXkKT1Bqmmlj0OVoSHUSuQfSzpkVYChItX70NojhkwaOJJwUyK1SzBenCGXIGwBlt5NHr8Dx41cg==",
+    "Svinx.FindMe.Libraries.Search/1.0.5": {
+      "sha512": "eYC6RqI9hzUqZg4koqbRsXU4N7A27XCq2gILKlK8ANEJbsfxbpNd4yFoFwNLdWLrv4iYecsis2wc9td0V8rw7Q==",
       "type": "package",
-      "path": "svinx.findme.libraries.search/1.0.0",
+      "path": "svinx.findme.libraries.search/1.0.5",
       "files": [
         "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll",
-        "svinx.findme.libraries.search.1.0.0.nupkg.sha512",
+        "svinx.findme.libraries.search.1.0.5.nupkg.sha512",
         "svinx.findme.libraries.search.nuspec"
       ]
     },
-    "Svinx.Libraries.RabbitMQ/1.0.0": {
-      "sha512": "GWSixnAuTBsy2vfvCsXrahx8MPOZpv82an33m4mWZO9vSrBB9t/OColdE0zWeX3RAi7xn7TdiKJ/vSW2gTwnsA==",
+    "Svinx.Libraries.Queues/1.0.2": {
+      "sha512": "v0/VICSidzaNGh5B5mAXcR5X5GEwJuTtUrR+SWBHec8eNpKK6MN8ZVR0wb+82/O6/pnL3P7cC1jBu3lzjivLCw==",
       "type": "package",
-      "path": "svinx.libraries.rabbitmq/1.0.0",
+      "path": "svinx.libraries.queues/1.0.2",
       "files": [
-        "lib/netcoreapp2.0/Svinx.Libraries.RabbitMQ.dll",
-        "svinx.libraries.rabbitmq.1.0.0.nupkg.sha512",
-        "svinx.libraries.rabbitmq.nuspec"
+        "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll",
+        "svinx.libraries.queues.1.0.2.nupkg.sha512",
+        "svinx.libraries.queues.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -12601,7 +12602,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Svinx.FindMe.Libraries.Search >= 1.0.0"
+      "Svinx.FindMe.Libraries.Search >= 1.0.5"
     ]
   },
   "packageFolders": {
@@ -12610,12 +12611,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "c:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
+      "projectUniqueName": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
       "projectName": "Search",
-      "projectPath": "c:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
+      "projectPath": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
       "packagesPath": "C:\\Users\\voord\\.nuget\\packages\\",
-      "outputPath": "c:\\Development\\Svinx\\FindMe\\Services\\Search\\obj\\",
+      "outputPath": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12658,7 +12662,7 @@
           },
           "Svinx.FindMe.Libraries.Search": {
             "target": "Package",
-            "version": "1.0.0"
+            "version": "1.0.5"
           }
         },
         "imports": [

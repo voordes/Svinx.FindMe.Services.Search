@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Svinx.FindMe.Services.Search</AssemblyName>
+    <RootNamespace>Svinx.FindMe.Services.Search</RootNamespace>
+    <UserSecretsId>d6848bb4-9216-4f53-a411-38615e7ae9c2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Svinx.FindMe.Libraries.Search" Version="1.0.0" />
+    <PackageReference Include="Svinx.FindMe.Libraries.Search" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup>

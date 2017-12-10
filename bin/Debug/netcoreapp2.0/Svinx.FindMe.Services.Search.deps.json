@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "2dbca37ef44cda385f412f4a22e400e490911016"
+    "signature": "5d11f23570c62cba6d1246356488b88b07abd4d1"
   },
   "compilationOptions": {
     "defines": [
@@ -21,17 +21,17 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Search/1.0.0": {
+      "Svinx.FindMe.Services.Search/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Svinx.FindMe.Libraries.Search": "1.0.0"
+          "Svinx.FindMe.Libraries.Search": "1.0.5"
         },
         "runtime": {
-          "Search.dll": {}
+          "Svinx.FindMe.Services.Search.dll": {}
         },
         "compile": {
-          "Search.dll": {}
+          "Svinx.FindMe.Services.Search.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2662,10 +2662,10 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
-      "Svinx.FindMe.Libraries.Search/1.0.0": {
+      "Svinx.FindMe.Libraries.Search/1.0.5": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
-          "Svinx.Libraries.RabbitMQ": "1.0.0"
+          "Svinx.Libraries.Queues": "1.0.2"
         },
         "runtime": {
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
@@ -2674,16 +2674,17 @@
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
         }
       },
-      "Svinx.Libraries.RabbitMQ/1.0.0": {
+      "Svinx.Libraries.Queues/1.0.2": {
         "dependencies": {
+          "Microsoft.Extensions.Options": "2.0.0",
           "Newtonsoft.Json": "10.0.3",
           "RabbitMQ.Client": "5.0.1"
         },
         "runtime": {
-          "lib/netcoreapp2.0/Svinx.Libraries.RabbitMQ.dll": {}
+          "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll": {}
         },
         "compile": {
-          "lib/netcoreapp2.0/Svinx.Libraries.RabbitMQ.dll": {}
+          "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -4006,7 +4007,7 @@
     }
   },
   "libraries": {
-    "Search/1.0.0": {
+    "Svinx.FindMe.Services.Search/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -5369,19 +5370,19 @@
       "path": "stackexchange.redis.strongname/1.2.4",
       "hashPath": "stackexchange.redis.strongname.1.2.4.nupkg.sha512"
     },
-    "Svinx.FindMe.Libraries.Search/1.0.0": {
+    "Svinx.FindMe.Libraries.Search/1.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GUNVkJ29e0CXkKT1Bqmmlj0OVoSHUSuQfSzpkVYChItX70NojhkwaOJJwUyK1SzBenCGXIGwBlt5NHr8Dx41cg==",
-      "path": "svinx.findme.libraries.search/1.0.0",
-      "hashPath": "svinx.findme.libraries.search.1.0.0.nupkg.sha512"
+      "sha512": "sha512-eYC6RqI9hzUqZg4koqbRsXU4N7A27XCq2gILKlK8ANEJbsfxbpNd4yFoFwNLdWLrv4iYecsis2wc9td0V8rw7Q==",
+      "path": "svinx.findme.libraries.search/1.0.5",
+      "hashPath": "svinx.findme.libraries.search.1.0.5.nupkg.sha512"
     },
-    "Svinx.Libraries.RabbitMQ/1.0.0": {
+    "Svinx.Libraries.Queues/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GWSixnAuTBsy2vfvCsXrahx8MPOZpv82an33m4mWZO9vSrBB9t/OColdE0zWeX3RAi7xn7TdiKJ/vSW2gTwnsA==",
-      "path": "svinx.libraries.rabbitmq/1.0.0",
-      "hashPath": "svinx.libraries.rabbitmq.1.0.0.nupkg.sha512"
+      "sha512": "sha512-v0/VICSidzaNGh5B5mAXcR5X5GEwJuTtUrR+SWBHec8eNpKK6MN8ZVR0wb+82/O6/pnL3P7cC1jBu3lzjivLCw==",
+      "path": "svinx.libraries.queues/1.0.2",
+      "hashPath": "svinx.libraries.queues.1.0.2.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
