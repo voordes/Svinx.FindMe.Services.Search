@@ -3115,11 +3115,11 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
-      "Svinx.FindMe.Libraries.Search/1.0.5": {
+      "Svinx.FindMe.Libraries.Search/1.0.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
-          "Svinx.Libraries.Queues": "1.0.2"
+          "Svinx.Libraries.Queues": "1.0.5"
         },
         "compile": {
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
@@ -3128,7 +3128,7 @@
           "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll": {}
         }
       },
-      "Svinx.Libraries.Queues/1.0.2": {
+      "Svinx.Libraries.Queues/1.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Options": "2.0.0",
@@ -8025,23 +8025,23 @@
         "stackexchange.redis.strongname.nuspec"
       ]
     },
-    "Svinx.FindMe.Libraries.Search/1.0.5": {
-      "sha512": "eYC6RqI9hzUqZg4koqbRsXU4N7A27XCq2gILKlK8ANEJbsfxbpNd4yFoFwNLdWLrv4iYecsis2wc9td0V8rw7Q==",
+    "Svinx.FindMe.Libraries.Search/1.0.6": {
+      "sha512": "fLZ8PW2c21lAgoI+ve5ZuXNkjFs7/rzqlUozWYqL3XDJ2Tc1gwSJaJXFht1UlHE0xg8EhvdztXFwJh4AvMyX3Q==",
       "type": "package",
-      "path": "svinx.findme.libraries.search/1.0.5",
+      "path": "svinx.findme.libraries.search/1.0.6",
       "files": [
         "lib/netcoreapp2.0/Svinx.FindMe.Libraries.Search.dll",
-        "svinx.findme.libraries.search.1.0.5.nupkg.sha512",
+        "svinx.findme.libraries.search.1.0.6.nupkg.sha512",
         "svinx.findme.libraries.search.nuspec"
       ]
     },
-    "Svinx.Libraries.Queues/1.0.2": {
-      "sha512": "v0/VICSidzaNGh5B5mAXcR5X5GEwJuTtUrR+SWBHec8eNpKK6MN8ZVR0wb+82/O6/pnL3P7cC1jBu3lzjivLCw==",
+    "Svinx.Libraries.Queues/1.0.5": {
+      "sha512": "ynJ+fKafcx8rnqwRxY2XWJoynLsY0++0Tg/4yfcxWvW2KB5CMkuulcC6TNRcCTKFMZGM/vfJ406imDd7EakEug==",
       "type": "package",
-      "path": "svinx.libraries.queues/1.0.2",
+      "path": "svinx.libraries.queues/1.0.5",
       "files": [
         "lib/netcoreapp2.0/Svinx.Libraries.Queues.dll",
-        "svinx.libraries.queues.1.0.2.nupkg.sha512",
+        "svinx.libraries.queues.1.0.5.nupkg.sha512",
         "svinx.libraries.queues.nuspec"
       ]
     },
@@ -12602,7 +12602,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Svinx.FindMe.Libraries.Search >= 1.0.5"
+      "Svinx.FindMe.Libraries.Search >= 1.0.6"
     ]
   },
   "packageFolders": {
@@ -12616,7 +12616,7 @@
     },
     "restore": {
       "projectUniqueName": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
-      "projectName": "Search",
+      "projectName": "Svinx.FindMe.Services.Search",
       "projectPath": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\Search.csproj",
       "packagesPath": "C:\\Users\\voord\\.nuget\\packages\\",
       "outputPath": "C:\\Development\\Svinx\\FindMe\\Services\\Search\\obj\\",
@@ -12651,18 +12651,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Svinx.FindMe.Libraries.Search": {
             "target": "Package",
-            "version": "1.0.5"
+            "version": "[1.0.6, )"
           }
         },
         "imports": [

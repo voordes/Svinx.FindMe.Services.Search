@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Svinx.Libraries.Queues;
 using Svinx.Libraries.Queues.RabbitMQ;
 using Svinx.FindMe.Libraries.Search;
@@ -29,8 +23,8 @@ namespace Svinx.FindMe.Services.Search
             services.AddMvc(); 
             services.AddOptions();
             services.Configure<Queue>(Configuration.GetSection("Queue"));
-            services.AddSingleton<IRPCClient, RPCClient>();
-            services.AddSingleton<IClient, Client>();
+            services.AddSingleton<IRPCClient, Svinx.Libraries.Queues.RabbitMQ.RPCClient>(); 
+            services.AddSingleton<IClient, Svinx.FindMe.Libraries.Search.Client>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

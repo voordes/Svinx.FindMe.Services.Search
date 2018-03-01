@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Svinx.FindMe.Libraries.Search;
 
@@ -12,6 +9,11 @@ namespace Svinx.FindMe.Services.Search.Controllers
     public class SearchController : Controller
     {
         private IClient _client;
+
+        public SearchController(IClient client)
+        {
+            _client = client;
+        }
 
         // GET api/values
         [HttpGet]
@@ -31,7 +33,12 @@ namespace Svinx.FindMe.Services.Search.Controllers
         [HttpPost]
         public dynamic Post(string query)
         {
-            return _client.Search(query);
+            var queryObject = new Query()
+            {
+                Category = string.Empty,
+                Term = query
+            };
+            return _client.Search(queryObject);
         }
 
         // PUT api/values/5
